@@ -134,7 +134,7 @@ torstein = User.new(
 
 karolina = User.new(
   name: "Karolina",
-  email: "szcepaniak.karolina@gmail.com",
+  email: "szczepaniak.karolina@gmail.com",
   password: "cykowski123!",
   age: "21",
   address: "Oslo, Norway",
