@@ -36,6 +36,7 @@ import { initMapbox } from '../plugins/init_mapbox';
 import { loadDynamicBannerText } from '../components/banner';
 // imports the typed js
 import { chatStyler } from '../components/chat_styler'
+import { hideChat } from "../components/hide_chat"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -45,5 +46,6 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
   loadDynamicBannerText();
   chatStyler();
+  hideChat();
 });
 
