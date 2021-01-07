@@ -10,7 +10,7 @@
           <p style="font-size: 16px;"><strong><%= user.native_language.name.capitalize %> &nbsp;</strong> <i class="far fas fa-arrow-alt-circle-right" style="font-size: 18px; color: #FFA024;"></i>&nbsp;  &nbsp;<strong><%= user.target_language.name.capitalize %></strong></p>
           <br>
           <br>
-          <p>[ level in <strong style="color: #7E27C4"> <%= user.target_language.name %> </strong>: <%= user.target_language_level %> ]</p>
+          <p>[ level in <strong style="color: #7E27C4"> <%= user.target_language.name.capitalize %> </strong>: <%= user.target_language_level %> ]</p>
         </div>
         <%= link_to 'Add', user_matches_path(user, @match), class: "add-button", method: :post %>
       </div>
