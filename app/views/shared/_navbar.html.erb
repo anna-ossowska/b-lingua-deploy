@@ -1,0 +1,41 @@
+<% if user_signed_in? %>
+  <div class="navbar navbar-dark navbar-expand-sm navbar-light navbar-lewagon sticky-top">
+    <%= link_to root_path, class: "navbar-brand" do %>
+    <div class="logo-navbar"></div>
+    <div class="logo-text"></div>
+      <% end %>
+
+    <div class="d-flex">
+      <div class="grey-box-list mb-5">
+        <p style="cursor: pointer; position: relative"><i> <%= link_to '', user_path(current_user, focus: "buddies"), id: "notifs", class: "fas fa-envelope b-card-action-default", data: { target: "notification.mail" } %></i></p>
+      </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-dark navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <% if user_signed_in? %>
+        <li>
+          <%= link_to user_path(current_user) do %>
+              <div class="avatar-navbar border border-white mr-2"></div>
+          <% end %>
+        </li>
+
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+              <%= link_to "Dashboard", user_path(current_user), class: "dropdown-item " %>
+              <%= link_to "Edit my profile", edit_user_path(current_user), class: "dropdown-item" %>
+              <%= link_to "Find a buddy", users_path, class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+<% end %>
