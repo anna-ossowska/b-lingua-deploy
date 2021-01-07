@@ -1,24 +1,19 @@
 <div class="banner-home d-flex justify-content-center">
 
-  <div class="container-banner">
+  <div class="container mt-4">
     <div class="row">
-      <div class="col-12 ">
-        <div class="container hero">
-          <div class="logo-purple"></div>
-          <h1 class="mb-3" style="font-size: 80px; font-weight: 400; position: realtive; color: #7E27C4;"><strong>BuddyLingua</strong></h1>
-          <p id="banner-typed-text" class="mb-5">Meet a buddy, learn a language.</p>
-          <br>
+      <div class="col-lg-12 col-md-12 col-xs-12 lead-box">
+        <h1 class="banner-lead">Buddy Lingua</h1>
+        <p id="banner-typed-text">Meet a buddy, learn a language.</p>
           <% if @user %>
-          <p><%= link_to "GET STARTED", user_path(@user), class: "button-purple-banner"%></p>
+            <p><%= link_to "Get Started", user_path(@user), class: "button-purple-banner"%></p>
           <% else %>
-          <p><%= link_to "GET STARTED", new_user_session_path, class: "button-purple-banner"%></p>
+            <p><%= link_to "Get Started", new_user_session_path, class: "button-purple-banner"%></p>
           <% end %>
-        </div>
       </div>
     </div>
   </div>
 </div>
-
 
 
 <!-- cards with icons -->
@@ -55,7 +50,6 @@
   </div>
 </div>
 
-
 <!-- newsletter -->
 <div class="p-5" style="background-color: #5D1D91;">
   <div class="text-center" id="newsletter">
@@ -70,3 +64,4 @@
 </div>
 
  <%= render 'shared/footer_not_fixed' %>
+

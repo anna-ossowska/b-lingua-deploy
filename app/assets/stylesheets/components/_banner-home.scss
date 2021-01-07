@@ -1,12 +1,37 @@
 .banner-home {
-  background-image: image-url("background-home.svg");
+  background-image: image-url("test.png");
   background-size: cover;
   background-position: center;
   align-items: center;
+  background-repeat: no-repeat;
   display: flex;
-  height: 100vh;
-  // width: 100vw;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  position: relative;
 }
+
+.banner-lead {
+  font-size: 60px;
+  font-weight: 700;
+  color: $highlight-1;
+}
+
+.lead-box {
+  width: 500px;
+  margin: 30px 75px;
+}
+
+#banner-typed-text {
+  font-size: 25px;
+  font-weight: 400;
+  height: 70px;
+  display: inline-block;
+  flex-grow: 0;
+  max-width: 530px;
+  margin-top: 7px;
+}
+
 
 .hero {
   margin-right: 350px;
@@ -14,11 +39,3 @@
   flex-direction: column; 
 }
 
-#banner-typed-text {
-  font-size: 40px;
-  font-weight: 400;
-  height: 100px;
-  display: inline-block;
-  flex-grow: 0;
-  max-width: 530px;
-}
