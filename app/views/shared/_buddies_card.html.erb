@@ -3,14 +3,14 @@
     <div class="b-card">
         <div class="b-card-content">
           <%= link_to(user) do %>
-            <h2 class="d-flex justify-content-between"><%= user.name %>,&nbsp;&nbsp; <%= render "shared/flag", language: "#{user.native_language.name}", flag_class: "flag-big"%>
+            <h2 class="d-flex justify-content-between" style="width: 490px;"><%= user.name %>,&nbsp;&nbsp; <%= render "shared/flag", language: "#{user.native_language.name}", flag_class: "flag-big"%>
             <span class=""><i><%= link_to '', user_match_path(user), class: "far fa-times-circle b-card-action-3", style: "font-size: 30px", method: :delete, data: { confirm: "Are you sure you want to remove this buddy?"}%></i></span></h2>
           <% end %>
           <p class="pb-0 mb-0"><%= user.address %></p>
             <div class="d-flex ml-1" style="width: 580px">
              <div class="b-circle"></div>
             <%# pluck the buddy's id with reflex from here %>
-              <p class="b-card-action-1 mb-0 d-flex align-items-center mt-2" style="cursor: pointer; padding-left:12px;" data-reflex-permanent data-reflex="click->ChatReflex#update" data-match="<%= user.id %>" data-chatroomId="<%= match[0].id %>"><i class="fas fa-comment" style="font-size: 30px;"></i><span>&nbsp; Say hello to your buddy!</span></p>
+              <p class="b-card-action-1 mb-0 d-flex align-items-center mt-2" style="cursor: pointer; padding-left:12px;" data-reflex-permanent data-reflex="click->ChatReflex#update" data-match="<%= user.id %>" data-chatroomId="<%= match[0].id %>"><i class="fas fa-comment" style="font-size: 30px;"></i><span>&nbsp; Let's talk!</span></p>
               </div>
           </div>
       </div>
