@@ -7,7 +7,7 @@
 
 .ultimate-learning .card {
   padding: 1.5rem;
-  min-height: 400px;
+  max-height: 400px;
   border: none;
 }
 
@@ -31,10 +31,14 @@
     font-size: 20px;
   }
 
- .ultimate-learning .card {
-    padding: 0.3rem 0.5rem !important;
+  
+  .ultimate-learning .card {
+    padding: 1rem;
     min-height: 100px;
+    border: none;
   }
+
+
 }
 
 /* Tablets */
@@ -53,10 +57,7 @@
     font-size: 20px;
   }
 
- .ultimate-learning .card {
-    padding: 0.3rem 0.5rem !important;
-    min-height: 100px;
-  }
+
 }
 
 /* Normal x2 */
