@@ -30,7 +30,6 @@
   .ultimate-learning .card p {
     font-size: 20px;
   }
-
   
   .ultimate-learning .card {
     padding: 1rem;
@@ -38,7 +37,25 @@
     border: none;
   }
 
+  .ultimate-learning .card p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
 
+  .line-bt {
+    border-bottom: 0.5px solid #b1b1b1;
+    margin-right: 20px;
+    margin-left:20px;
+  }
+
+  .line-bt:last-child {
+    border-bottom: none;
+  }
+  
+  .ultimate-learning .icon-home {
+    margin-top: 40px;
+  }
+  
 }
 
 /* Tablets */
@@ -61,10 +78,13 @@
   .line-bt {
     border-bottom: 0.5px solid #b1b1b1;
   }
-
   
   .line-bt:last-child {
     border-bottom: none;
+  }
+
+  .ultimate-learning .icon-home {
+    margin-top: 40px;
   }
 }
 

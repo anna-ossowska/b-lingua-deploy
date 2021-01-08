@@ -5,9 +5,8 @@
 	 style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#7E27C4;}
-	.st1{fill:#CCCCCC;}
+	.st1{fill:#D6D6D6;}
 	.st2{fill:#A167D1;}
-	.st3{fill:#AEAEAE;}
 </style>
 <g>
 	<g>
@@ -25,11 +24,11 @@
 		</g>
 		<path class="st2" d="M331,166c0-41.4-33.6-75-75-75v90h75V166z"/>
 		<path class="st2" d="M331,496c0-41.4-33.6-75-75-75v91h75V496z"/>
-		<circle class="st3" cx="76" cy="226" r="45"/>
+		<circle class="st1" cx="76" cy="226" r="45"/>
 		<path class="st0" d="M121,226c0-24.8-20.2-45-45-45v90C100.8,271,121,250.8,121,226z"/>
 		<path class="st2" d="M76,271c-41.4,0-76,33.6-76,75v15h76h75v-15C151,304.6,117.4,271,76,271z"/>
 		<path class="st2" d="M151,346c0-41.4-33.6-75-75-75v90h75V346z"/>
-		<circle class="st3" cx="436" cy="226" r="45"/>
+		<circle class="st1" cx="436" cy="226" r="45"/>
 		<path class="st0" d="M481,226c0-24.8-20.2-45-45-45v90C460.8,271,481,250.8,481,226z"/>
 		<path class="st2" d="M436,271c-41.4,0-75,33.6-75,75v15h75h76v-15C512,304.6,477.4,271,436,271z"/>
 		<path class="st2" d="M512,346c0-41.4-34.6-75-76-75v90h76V346z"/>

@@ -6,7 +6,8 @@
 <style type="text/css">
 	.st0{fill:#CBA9E7;}
 	.st1{fill:#7E27C4;}
-	.st2{fill:#FFE2BD;}
+	.st2{fill:#AEAEAE;}
+	.st3{fill:#F4F4F4;}
 </style>
 <g>
 	<g>
@@ -20,12 +21,12 @@
 		<path class="st1" d="M467,360c-24.8,0-45-20.2-45-45s20.2-45,45-45s45,20.2,45,45S491.8,360,467,360z"/>
 		<path class="st2" d="M413.2,150H196v-30h204.8l34.4-34.4l21.2,21.2L413.2,150z"/>
 		<path class="st1" d="M467,120c-24.8,0-45-20.2-45-45s20.2-45,45-45s45,20.2,45,45S491.8,120,467,120z"/>
-		<circle class="st2" cx="196" cy="195" r="75"/>
-		<path class="st2" d="M271,195c0-41.4-33.6-75-75-75v150C237.4,270,271,236.4,271,195z"/>
+		<circle class="st3" cx="196" cy="195" r="75"/>
+		<path class="st3" d="M271,195c0-41.4-33.6-75-75-75v150C237.4,270,271,236.4,271,195z"/>
 		<circle class="st0" cx="196" cy="195" r="45"/>
 		<path class="st1" d="M241,195c0-24.8-20.2-45-45-45v90C220.8,240,241,219.8,241,195z"/>
-		<path class="st2" d="M196,180h-15v30h15h15v-30H196z"/>
-		<path class="st2" d="M196,180h15v30h-15V180z"/>
+		<path class="st3" d="M196,180h-15v30h15h15v-30H196z"/>
+		<path class="st3" d="M196,180h15v30h-15V180z"/>
 	</g>
 </g>
 </svg>
