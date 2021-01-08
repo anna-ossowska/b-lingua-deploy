@@ -7,3 +7,14 @@
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
+
+/* Smartphones */
+@media only screen and (max-width: 576px) {
+  .avatar-navbar, .logo-navbar, .logo-text, .grey-box-list p {
+    display: none;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+}
+}
