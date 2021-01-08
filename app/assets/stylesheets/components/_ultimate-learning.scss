@@ -1,0 +1,82 @@
+.ultimate-lead {
+  font-weight: 600;
+  font-size: 30px;
+  color: #414040;
+  margin-top: 45px;
+}
+
+.ultimate-learning .card {
+  padding: 1.5rem;
+  min-height: 400px;
+  border: none;
+}
+
+.ultimate-learning .card p {
+  font-size: 23px
+}
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .ultimate-lead {
+     font-size: 24px;
+     margin-top: 25px;
+  }
+  
+  .ultimate-learning .icon-home {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ultimate-learning .card p {
+    font-size: 20px;
+  }
+
+ .ultimate-learning .card {
+    padding: 0.3rem 0.5rem !important;
+    min-height: 100px;
+  }
+}
+
+/* Tablets */
+@media(min-width: 501px) and (max-width: 768px) {
+  .ultimate-lead {
+     font-size: 24px;
+     margin-top: 25px;
+  }
+  
+  .ultimate-learning .icon-home {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ultimate-learning .card p {
+    font-size: 20px;
+  }
+
+ .ultimate-learning .card {
+    padding: 0.3rem 0.5rem !important;
+    min-height: 100px;
+  }
+}
+
+/* Normal x2 */
+@media(min-width: 769px) and (max-width: 1000px) {
+  .ultimate-lead {
+     font-size: 28px;
+  }
+
+  .ultimate-learning .icon-home {
+    height: 100px;
+    width: 100px;
+  }
+  .ultimate-learning .card p {
+    font-size: 20px;
+ }
+}
+
+/* Widescreen */
+@media(min-width: 1001px) and (max-width: 1200px) {
+  .ultimate-learning .card p {
+    font-size: 23px;
+ }
+}

@@ -1,0 +1,108 @@
+.newsletter-container {
+  background: #5D1D91;
+}
+
+.newsletter-content {
+  width: 700px;
+}
+
+.newsletter-container .newsletter-content .lead {
+  color: #fff;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.newsletter-container .newsletter-content p {
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.newsletter-container .newsletter-content form {
+  margin-bottom: 2rem;
+}
+
+.newsletter-container .newsletter-content input.form-control {
+  font-size: 20px;
+  color: #595959;
+  height: 100%;
+}
+
+.newsletter-container .newsletter-content input.button-rect-orange {
+  font-size: 20px;
+}
+
+/* Smartphones */
+@media(min-width: 300px) and (max-width: 580px) {
+  .newsletter-content {
+    width: 400px;
+  }
+
+  .newsletter-container .newsletter-content .lead {
+     font-size: 28px;
+  }
+
+  .newsletter-container .newsletter-content p {
+    font-size: 20px;
+  }
+
+  .newsletter-container .newsletter-content input.form-control {
+    font-size: 16px;
+    width: 180px;
+  }
+
+  .newsletter-container .newsletter-content input.button-rect-orange {
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media(min-width: 581px) and (max-width: 768px) {
+  
+  .newsletter-content {
+    width: 590px;
+  }
+
+  .newsletter-container .newsletter-content .lead {
+     font-size: 28px;
+  }
+
+  .newsletter-container .newsletter-content p {
+    font-size: 20px;
+  }
+
+  .newsletter-container .newsletter-content input.form-control {
+    font-size: 18px;
+  }
+
+  .newsletter-container .newsletter-content input.button-rect-orange {
+    font-size: 18px;
+  }
+}
+
+/* Normal x2 */
+@media(min-width: 769px) and (max-width: 1000px) {
+
+  .newsletter-content {
+    width: 600px;
+  }
+
+  .newsletter-container .newsletter-content .lead {
+     font-size: 28px;
+  }
+
+  .newsletter-container .newsletter-content p {
+    font-size: 20px;
+  }
+
+  .newsletter-container .newsletter-content input.form-control {
+    font-size: 18px;
+  }
+
+  .newsletter-container .newsletter-content input.button-rect-orange {
+    font-size: 18px;
+  }
+}

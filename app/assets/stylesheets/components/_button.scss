@@ -51,7 +51,7 @@
   background-color: $highlight-2;
   text-decoration: none !important;
   color: white;
-  padding: 8px 24px;
+  padding: 8px 20px;
   border-radius: $border-radius;
   border: none;
   transition: color 1s ease;
@@ -73,7 +73,7 @@
   border-radius: $border-radius-lg;
   border: none;
   margin: 0;
-
+  letter-spacing: 0.75px;
   transition: color 1s ease;
 }
 

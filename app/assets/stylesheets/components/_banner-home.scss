@@ -5,20 +5,20 @@
   align-items: center;
   background-repeat: no-repeat;
   display: flex;
-  height: 80vh;
+  height: 95vh;
   top: 0;
   left: 0;
   position: relative;
 }
 
 .banner-lead {
-  font-size: 60px;
+  font-size: 66px;
   font-weight: 700;
   color: $highlight-1;
 }
 
 .lead-box {
-  width: 500px;
+  width: 400px;
   margin: 30px 75px;
 }
 
@@ -30,6 +30,7 @@
   flex-grow: 0;
   max-width: 530px;
   margin-top: 7px;
+  margin-bottom: 8px;
 }
 
 
