@@ -17,15 +17,8 @@
   padding: 20px;
   border-radius: 12px;
   background: #fff;
-  border: 1px solid rgb(209, 209, 209);
-}
-
-a {
-text-decoration: none !important;
-}
-
-.c-container .c-box:hover {
-border: 1px solid #7E27C4 !important;
+  border: 0.5px solid #dad9d9;
+  transition: transform .4s;
 }
 
 // this makes the special card border
@@ -37,10 +30,10 @@ border: 1px solid #7E27C4 !important;
   right: -2px;
   bottom: -2px;
   background: #000;
-  transform: skew(4deg, 4deg);
+  transform: skew(1.65deg, 1.65deg);
   z-index: -1;
   border-radius: 12px;
-  background: linear-gradient(315deg, #D31E9C, #7E27C4);
+  background: linear-gradient(315deg, #FFF1E0, #CBA9E7);
 }
 
 // makes the content fill the available space of the box
@@ -53,8 +46,13 @@ border: 1px solid #7E27C4 !important;
 
 // side padding to inner user content
 .c-content .c-details {
-
   margin: 20px 20px;
+}
+
+// vertical line
+.c-content .c-details .special-char {
+  font-weight: 300;
+  color: #e0e0e0;
 }
 
 // img in to rounded avatar
@@ -89,8 +87,23 @@ border: 1px solid #7E27C4 !important;
   font-size: 14px;
 }
 
-.c-box .c-content strong {
-  color: #FFA024;
+// Set color of defualt text
+a {
+  text-decoration: none !important;
+  color: #895eac;
+}
+
+// .c-container .c-box:hover {
+//   border: 0.5px solid #dad9d9;
+// }
+
+
+.c-box .c-content:hover strong {
+  color: #ffb14b;
+}
+
+.c-box .c-content:hover span.text-color {
+  color: $highlight-1;
 }
 
 // button
@@ -99,7 +112,8 @@ border: 1px solid #7E27C4 !important;
   padding: 10px 20px;
   text-align: right;
   text-decoration: none;
-  border: 1px solid #7E27C4;
+  color: #895eac;
+  border: 1px solid #895eac;
   border-radius: 8px;
   transition: 0.5s;
   transform: translateY(-40px);

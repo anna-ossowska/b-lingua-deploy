@@ -5,16 +5,16 @@
 
 
     <div class="col-6 col-md-6 col-lg-6 p-0">
-      <div class="container">
+      <div class="container find-friend-img">
         <div class="banner-index"></div>
-
       </div>
     </div>
-    <div class="col-6 col-md-6 col-lg-6 d-flex align-items-center p-0">
-      <div class="container">
-        <h1 class="mb-3" style="font-size: 90px; font-weight: 800;">
-          <span style="color: #5D1D91;"><strong>Find a</strong></span>
-          <strong style="color: #7E27C4;">friend</strong>
+
+    <div class="find-friend col-lg-6 col-md-6 col-xs-6">
+      <div class="container content">
+        <h1>
+          <strong><span class="purple-1">Find a<br></span></strong>
+          <strong><span class="purple-2">friend</span></strong>
         </h1>
       </div>
     </div>
@@ -22,10 +22,8 @@
 
   <div class="row align-items-center mt-4">
     <div class="form" style="margin: 0 auto;">
-      <div class="container" style="border-color: black">
-
+      <div class="form-container container" style="border-color: black">
           <!-- .filter -->
-
             <form style="padding: 16px;" action="/users" method="GET">
               <label class="label" for="filter">Filter by: &nbsp; &nbsp;</label>
               <select class="form-style select-input" id="filter" name="filter" onchange="this.form.submit()">
@@ -35,14 +33,14 @@
                 <option class="form-style"value="location" <%= "selected" if session[:filter] == "location" %>>Filter by location</option>
               </select>
               <% if session[:filter] == "gender" %>
-                <select class="form-style form-style-mrg" name="filter_option" onchange="this.form.submit()">
+                <select class="form-style select-input form-style-mrg" name="filter_option" onchange="this.form.submit()">
                   <option value="">Pick a gender</option>
                   <% @genders.each do |gender| %>
                     <option value="<%= gender.id %>"><%= gender.name %></option>
                   <% end %>
                 </select>
               <% elsif session[:filter] == "interest" %>
-                <select class="form-style form-style-mrg" name="filter_option" onchange="this.form.submit()">
+                <select class="form-style select-input form-style-mrg" name="filter_option" onchange="this.form.submit()">
                   <option value="">Pick an interest</option>
                   <% @interests.each do |interest| %>
                     <option value="<%= interest.id %>"><%= interest.name %></option>
@@ -51,13 +49,6 @@
               <% end %>
             </form>
           <%#= link_to "Clear Filter Options", clear_path %>
-
-
-
-
-
-
-
 
       </div><!-- .container -->
     </div>

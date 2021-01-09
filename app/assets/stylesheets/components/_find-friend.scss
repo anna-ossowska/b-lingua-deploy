@@ -1,0 +1,105 @@
+.find-friend {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-friend .container h1 {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.find-friend .container h1 {
+  font-weight: bold
+}
+
+.find-friend .content h1 span.purple-1 {
+  color: #5D1D91;
+}
+.find-friend .content h1 span.purple-2 {
+  color: #7E27C4;
+}
+
+// Smartphones
+@media only screen and (max-width: 500px) {
+  body {
+    background: red;
+  }
+
+  .background-index {
+    display: none;
+  }
+
+  .find-friend .container h1 {
+    font-size: 75px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .find-friend-img {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .find-friend .container h1 {
+    margin-top: 0;
+  }
+
+  .form .container form label {
+    text-align: center;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .find-friend .content h1::after {
+    content: '                  ';
+    border-bottom: 2px #333 solid;
+  }
+
+}
+
+// Tablets
+@media (min-width: 501px) and (max-width: 760px) {
+
+  .background-index {
+    display: none;
+  }
+
+  .find-friend .container h1 {
+    font-size: 75px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .find-friend-img {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .find-friend .container h1 {
+    margin-top: 0;
+  }
+
+  .form .container form label {
+    text-align: center;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
