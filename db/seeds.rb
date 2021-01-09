@@ -269,7 +269,7 @@ olivia = User.new(
   puts "Completed user #{User.last.name}!"
 
 aleksandra = User.new(
-  name: "Aleksandra",
+  name: "Ola",
   email: "aleksandra.woszczyk@gmail.com",
   password: "cykowski123!",
   age: "26",

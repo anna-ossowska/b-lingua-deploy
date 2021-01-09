@@ -2,26 +2,28 @@
   <%= link_to(user) do %>
   <div class="c-container" style="text-decoration: none;">
     <div class="c-box">
-    <div class="container" style="margin-right:50px"></div>
+    <%# No photos, so we need to push content to the center %>
+    <div class="container"></div>
       <div class="c-content">
         <div class="c-details">
           <h2>
             <span class="text-color"><%= user.name %>, <%= user.age %><span>
             <span class="special-char">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-            <strong class="pl-8"> <%= current_user.match_percentage(user) %> % </strong>&nbsp;
+            <strong class="match pl-8"> <%= current_user.match_percentage(user) %> % </strong>&nbsp;
           </h2>
           <h3>
-            <span class="text-color"><%= user.address %></span>
+            <span class="address text-color"><%= user.address %></span>
           </h3>
-          <p>
+          <p class="lang-pairs">
             <strong><%= user.native_language.name.capitalize %> &nbsp;</strong>
             <strong>&rarr;</strong>
             </i>&nbsp;  &nbsp;<strong><%= user.target_language.name.capitalize %></strong>
           </p>
           <br>
           <br>
-          <p>
-            <span class="text-color">[ level in <%= user.target_language.name.capitalize %>: &nbsp;<%= user.target_language_level %> ]</span>
+          <p class="lang-details">
+            <span class="lang-level text-color"> [ level in <%= user.target_language.name.capitalize %>: &nbsp;</span>
+            <span class="target-lang"><%= user.target_language_level %> ]</span>
           </p>
         </div>
         <%= link_to 'Add', user_matches_path(user, @match), class: "add-button", method: :post %>

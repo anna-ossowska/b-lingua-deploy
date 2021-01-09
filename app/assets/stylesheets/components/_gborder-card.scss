@@ -55,6 +55,11 @@
   color: #e0e0e0;
 }
 
+// No photos, so wee need to push content to the center
+.c-box .container {
+  margin-right: 50px;
+}
+
 // img in to rounded avatar
 .c-box img {
   height: 150px;
@@ -132,4 +137,138 @@ a {
 .add-button:hover {
   color: #fff;
   background: #7E27C4;
+}
+
+@media only screen and (max-width: 360px) {
+
+  .c-container {
+    padding: 15px 0;
+  }
+
+  .c-container .c-box {
+    height: 235px;
+    padding-right: 8px;
+  }
+
+  .c-content .c-details {
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .c-box .container {
+    margin-right: 0;
+  }
+
+  .c-box .c-content h2 .special-char {
+    display: none;
+  }
+
+  .c-box .c-content h2 .match:before {
+    content: ' ';
+    // Without it, it will disappear
+    white-space: pre;
+  }
+
+  .c-box .c-content h2 {
+    font-size: 16px;
+  }
+
+   .c-box .c-content h3 .address {
+     font-size: 16px;
+   }
+
+  .c-box .c-content .lang-details span.lang-level {
+    display: none;
+  }
+
+  .c-box .c-content .lang-details:before {
+     content: '[ L2 level:  '
+  }
+}
+
+/* Smartphones */
+@media only screen and (min-width: 361px) and (max-width: 500px) {
+
+  .c-container .c-box {
+    height: 235px;
+    padding-right: 8px;
+  }
+
+  .c-container {
+    padding: 20px 0;
+  }
+
+  .c-container .c-box {
+    height: 235px;
+  }
+
+  .c-box .container {
+    margin-right: 0;
+  }
+
+  .c-content .c-details {
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .c-box .c-content h2 .special-char {
+    display: none;
+  }
+
+  .c-box .c-content h2 .match:before {
+    content: ' ';
+    // Without it, it will disappear
+    white-space: pre;
+  }
+
+  .c-box .c-content h2 {
+    font-size: 18px;
+  }
+
+  .c-box .c-content h3 .address {
+    font-size: 16px;
+  }
+
+  .c-box .c-content .lang-details span.lang-level {
+    display: none;
+  }
+
+  .c-box .c-content .lang-details:before {
+     content: '[ L2 level:  '
+  }
+}
+
+/* Tablets */
+@media(min-width: 501px) and (max-width: 768px) {
+
+  .c-container .c-box {
+    width:400px;
+  }
+
+  .c-container {
+    padding: 25px 0;
+  }
+
+  .c-container .c-box {
+    height: 235px;
+    padding-right: 8px;
+  }
+
+  .c-box .container {
+    margin-right: 0px;
+  }
+
+  .c-box .c-content h2 {
+    font-size: 20px;
+  }
+
+  .c-box .c-content h2 .special-char {
+    display: none;
+  }
+
+  .c-box .c-content h2 .match:before {
+    content: ' ';
+    // Without it, it will disappear
+    white-space: pre;
+  }
 }
