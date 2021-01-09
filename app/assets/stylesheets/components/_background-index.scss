@@ -8,3 +8,15 @@
   height: 70vh;
   z-index: -1;  
 }
+
+@media only screen and (max-width: 500px) {
+  .background-index {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .background-index {
+    display: none;
+  }
+}
