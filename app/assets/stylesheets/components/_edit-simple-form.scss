@@ -1,0 +1,37 @@
+
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  body {
+    background: red;
+  }
+
+  .short-bio {
+    width: 100%
+  }
+
+  .age {
+    width: 100%
+  }
+
+  .gender {
+    width: 100%
+  }
+
+  .address-edit {
+    width: 100%
+  }
+
+  .interests-edit {
+    width: 100%
+  }
+
+  .button-purple.change-mrg {
+    margin-bottom: 8px;
+    width: 100px;
+  }
+
+  .button-secondary.change-mrg {
+    margin-left: 0 !important;
+  }
+}
