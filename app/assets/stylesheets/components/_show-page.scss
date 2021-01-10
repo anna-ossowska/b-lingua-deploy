@@ -1,0 +1,338 @@
+.grid-container {
+  // min-width: 1000px;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  min-height: 70vh; // REWRITE THIS!!!!!!!!!!!!!!!!!!!!
+  height: 100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.grid-container > *:first-child {
+  grid-row: 1 / span 2;
+}
+
+.grid-container > *:last-child {
+  grid-row: 1 / span 2;
+}
+
+.styling {
+  margin: 80px auto;
+  box-shadow: 3px 3px 3px #F2F2F2;
+  border: solid 1px #D9D9D9;
+  // background: #f4f4f4;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+  border-right: #f4f4f4 2px solid;
+}
+
+.info .card {
+  position: absolute;
+  top: 30px;
+}
+
+.about .container {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.about .container .card {
+  margin-top: 30px;
+}
+
+.container-tab .tab-content .self-introduction {
+  width: 600px;
+  text-align: justify;
+}
+
+.interests {
+  width: 600px;
+}
+
+.container-tab .tab-content .self-introduction {
+  margin-top: 1.2rem;
+  margin-left: 3rem;
+}
+
+.speaks,
+.wants-to-learn {
+  margin-top: 11px;
+}
+
+.interests {
+  margin-top: 28px;
+}
+
+.buddies-tab {
+  margin-top: 0;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.scroll {
+  height: 10px;
+}
+
+//!!!!!!!!!!!!!!!!!??????????????!!!!!!!!!!!!!!1
+// Media Queries
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  // body {
+  //   background: red;
+  // }
+
+  .grid-container {
+    min-height: 700px;
+    margin-top: 80px;
+    overflow-x: auto;
+    margin: 0 auto;
+  }
+
+ 
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0;
+  }
+
+
+  .grid-container > *:first-child {
+    grid-row: 1 / span 2;
+  }
+
+  .grid-container > *:last-child {
+    grid-row: 3 / span 3;
+  }
+
+  .info {
+    margin-right: 35px;
+    border-right: none;
+  }
+
+  .about {
+    margin-top: 200px;
+    margin-left: 0px !important;
+    width: 371px !important;
+  }
+
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-tab .tab-content {
+    width: 500px;
+  }
+
+  // !!!!!!!!!!!
+  .container-tab .tab-content .self-introduction {
+    margin-left: 175px;
+    width: 360px;
+    text-align: justify;
+  }
+
+  .speaks {
+    margin-left: 125px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+
+  .wants-to-learn {
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+
+  .tab-content .interests {
+    display: none;
+  }
+
+  .buddies-tab {
+    margin-left: 175px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .nav-styling {
+    position: static;
+  }
+
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid #7E27C4;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  .b-card {
+    width: 375px;
+    margin-right: 135px;
+  }
+
+  .b-card .b-card-content h2 {
+    width: 320px;
+  }
+}
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+/* Tablets */
+@media(min-width: 501px) and (max-width: 768px) {
+  // body {
+  //   background: #f4f4f4;
+  // }
+
+  .grid-container {
+    min-height: 700px;
+    margin-top: 80px;
+    overflow-x: auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0;
+  }
+
+
+  .grid-container > *:first-child {
+    grid-row: 1 / span 2;
+  }
+
+  .grid-container > *:last-child {
+    grid-row: 3 / span 3;
+  }
+
+  .info {
+    margin-right: 35px;
+    border-right: none;
+  }
+
+  .about {
+    margin-top: 200px;
+  }
+
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-tab .tab-content {
+    width: 500px;
+  }
+
+  // !!!!!!!!!!!
+  .container-tab .tab-content .self-introduction {
+    margin-left: 175px;
+    width: 350px;
+    text-align: justify;
+  }
+
+  .speaks {
+    margin-left: 125px;
+    margin-top: 6px;
+  }
+
+  .wants-to-learn {
+    margin-top: 6px;
+  }
+
+  .tab-content .interests {
+    display: none;
+  }
+
+  .buddies-tab {
+    margin-left: 175px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .nav-styling {
+    position: static;
+  }
+
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid #7E27C4;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  .b-card {
+    width: 375px;
+    margin-right: 135px;
+  }
+
+  .b-card .b-card-content h2 {
+    width: 320px;
+  }
+}
+// ????????????????????????????????????????????????????????????????????????????????????????
+    /* Normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+
+  // body {
+  //   background: #cfcece;
+  // }
+
+  .grid-container {
+    // min-width: 1000px;
+    min-height: 700px; // REWRITE THIS!!!!!!!!!!!!!!!!!!!!
+    overflow-x: auto;
+
+  }
+
+  .container-tab .tab-content .self-introduction {
+    width: 400px;
+    text-align: justify;
+  }
+
+  .interests {
+    width: 400px;
+  }
+}
+
+    // /* Widescreen */
+    // @media(min-width: 1201px) {
+    //   body {
+    //     background: orange;
+    //   }
+
+    //   #widescreen h1 {
+    //     display: block;
+    //   }
+    // }
+
+    // /* Landscape */
+    // @media(max-height: 500px) {
+    //   body {
+    //     background: brown;
+    //   }
+
+    //   #widescreen h1 {
+    //     display: block;
+    //   }
+    // }

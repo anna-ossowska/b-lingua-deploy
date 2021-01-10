@@ -1,13 +1,12 @@
-<div class="mt-3 ml-5 mb-3">
+<div class="buddies-tab">
 
   <% if @user.buddies.count == 0 %>
-  <p class="mt-3">You don't have any buddies yet!</p>
-  <p class="mb-5">Let's fix that!</p>
-  <%= link_to "Find a buddy", users_path, class: "button-purple"%>
+  <p>You don't have any buddies yet!</p>
+  <p style="margin-bottom: 30px">Let's fix that!</p>
+  <%= link_to "Search", users_path, class: "button-purple"%>
   <% else %>
   <div data-controller="chat">
     <div class="container pl-0" style="position: relative;" >
-      <%# <h6 class="m-0" style="color: #7E27C4; font-size: 20px">YOUR BUDDIES&nbsp; &nbsp;<i class="far fa-hand-point-left" style="color: #7E27C4; font-size: 20px;"></i></h6><br> %>
       <% @user.buddies.each do |user| %>
       <%= render 'shared/buddies_card', user: user, match: user.find_match(@user) %>
       <%# BELOW HERE IS CODE FOR CHAT  %>

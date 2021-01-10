@@ -1,6 +1,8 @@
 .purple-box {
     list-style-type: none;
-    margin-left: -40px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 0;
     color: $highlight-1;
 }
 
@@ -15,6 +17,7 @@
     border: 1px solid $highlight-1;
     // box-shadow: 3px 3px #ccc;
     box-shadow: 3px 3px 2px 0px rgba(194, 121, 253, 0.2);
+    width: 100%;
 }
 
 .edit-icon {
