@@ -94,3 +94,14 @@
 .message-container p {
   margin: 0 !important;
 }
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .container-chat {
+    display: none;
+  }
+
+  .msg-icon {
+    display: none;
+  }
+}
