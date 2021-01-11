@@ -4,7 +4,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  min-height: 70vh; // REWRITE THIS!!!!!!!!!!!!!!!!!!!!
+  min-height: 70vh;
   height: 100%;
 }
 
@@ -91,13 +91,7 @@
   height: 10px;
 }
 
-//!!!!!!!!!!!!!!!!!??????????????!!!!!!!!!!!!!!1
-// Media Queries
-/* Smartphones */
 @media only screen and (max-width: 500px) {
-  // body {
-  //   background: red;
-  // }
 
   .grid-container {
     min-height: 700px;
@@ -194,13 +188,7 @@
   }
 }
 
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
-/* Tablets */
 @media(min-width: 501px) and (max-width: 768px) {
-  // body {
-  //   background: #f4f4f4;
-  // }
 
   .grid-container {
     min-height: 700px;
@@ -243,7 +231,6 @@
     width: 500px;
   }
 
-  // !!!!!!!!!!!
   .container-tab .tab-content .self-introduction {
     margin-left: 175px;
     width: 350px;
@@ -290,19 +277,12 @@
     width: 320px;
   }
 }
-// ????????????????????????????????????????????????????????????????????????????????????????
-    /* Normal */
+
 @media(min-width: 769px) and (max-width: 1200px) {
 
-  // body {
-  //   background: #cfcece;
-  // }
-
   .grid-container {
-    // min-width: 1000px;
-    min-height: 700px; // REWRITE THIS!!!!!!!!!!!!!!!!!!!!
+    min-height: 700px; 
     overflow-x: auto;
-
   }
 
   .container-tab .tab-content .self-introduction {
@@ -314,25 +294,3 @@
     width: 400px;
   }
 }
-
-    // /* Widescreen */
-    // @media(min-width: 1201px) {
-    //   body {
-    //     background: orange;
-    //   }
-
-    //   #widescreen h1 {
-    //     display: block;
-    //   }
-    // }
-
-    // /* Landscape */
-    // @media(max-height: 500px) {
-    //   body {
-    //     background: brown;
-    //   }
-
-    //   #widescreen h1 {
-    //     display: block;
-    //   }
-    // }
