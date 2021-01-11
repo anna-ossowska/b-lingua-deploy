@@ -45,6 +45,6 @@ select {
 // Same as:
 // select:hover, select:focus, select:focus, select.selected { border-color: #2AD2C9; } 
 select:focus{
-    border: 2.5px solid $purple-2;
+    border: 2.5px solid #e0e0e0;
     outline: none;
 }
