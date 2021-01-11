@@ -1,33 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <div>
-    <h2 class="error-number">404</h2>
-    <span><i class="fas fa-frown-open" style="font-size: 200px"></i></span>
-    <p class="description">Sorry, page not found</p>
-  </div>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <style>
-
-    body {
-      background-color: #FFA024;
-      font-family: "Poppins", "sans-serif";
-      text-align: center;
-      color: white;
-    }
-
-    .error-number {
-      font-size: 20em;
-      margin: 0;
-    }
-
-    .description {
-      font-size: 5em;
-    }
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>404</title>
 </head>
 
+<body>
+  <div class="container-main">
+    <h2 class="err">404</h2>
+    <p class="description">Something went wrong</p>
+    <div><a href="https://intense-gorge-44528.herokuapp.com/" class="btn-purple-err">Home</a></div>
+  </div>
+
+</body>
+
 </html>
+
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+  }
+
+  .container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .err {
+    font-size: 330px;
+    color: #7E27C4;
+    margin: 0;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 25px;
+    color: rgb(68, 68, 68);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: -55px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .btn-purple-err {
+    background-color: #fff;
+    background: transparent;
+    color: #7E27C4;
+    border: 2px solid #7E27C4;
+    font-size: 25px;
+    text-decoration: none !important;
+    letter-spacing: 0.75px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 10px 36px;
+    position: relative;
+    transition: 0.2s ease;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .btn-purple-err:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #7E27C4;
+    z-index: -1;
+    transition: 0.2s ease;
+  }
+
+  .btn-purple-err:hover {
+    background-color: #681fa3;
+    color: #fff;
+    transition: 0.2s ease;
+  }
+
+  .btn-purple-err:hover:before {
+    width: 100%;
+  }
+</style>
