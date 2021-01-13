@@ -13,7 +13,6 @@
   color: white;
 }
 
-
 .button-orange {
   background-color: $highlight-2;
   text-decoration: none !important;
@@ -28,7 +27,6 @@
   background-color: #e78a11;
   color: white;
 }
-
 
 .button-secondary {
   background-color: $grey-5;
@@ -56,6 +54,12 @@
   border: none;
   transition: color 1s ease;
   font-size: 20px;
+  // Necessary to apply animation
+  display: inline-block;
+}
+
+.button-rect-orange.pulse {
+  animation-duration: 1.5s;
 }
 
 .button-rect-orange:hover {
@@ -76,6 +80,12 @@
   margin: 0;
   letter-spacing: 0.75px;
   transition: color 1s ease;
+  // Necessary to apply animation
+  display: inline-block;
+}
+
+.button-purple-banner.pulse {
+  animation-duration: 1.5s;
 }
 
 .button-purple-banner:hover {
@@ -83,7 +93,7 @@
   color: white;
 }
 
-@media(min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .button-purple-banner {
     padding: 10px 20px;
     font-size: 20px;
@@ -117,7 +127,6 @@
 }
 
 .button-round:hover {
-  background-color:  $grey-3;
+  background-color: $grey-3;
   color: white;
 }
-

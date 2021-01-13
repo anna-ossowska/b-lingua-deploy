@@ -8,7 +8,7 @@
           <% if @user %>
             <p><%= link_to "Get Started", user_path(@user), class: "button-purple-banner"%></p>
           <% else %>
-            <p><%= link_to "Get Started", new_user_session_path, class: "button-purple-banner"%></p>
+            <p><%= link_to "Get Started", new_user_session_path, class: "button-purple-banner animated infinite pulse slower"%></p>
           <% end %>
       </div>
     </div>
@@ -58,7 +58,7 @@
     <br>
     <form class="form-inline d-flex justify-content-center">
       <input type="email" placeholder="Enter your email..." class="form-control mr-2 text-center">
-      <input type="submit" value="Subscribe" class="button-rect-orange">
+      <input type="submit" value="Subscribe" class="button-rect-orange animated infinite pulse slower">
     </form>
   </div>
 </div>

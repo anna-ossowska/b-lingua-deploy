@@ -1,4 +1,4 @@
-<div class="background-index"></div>
+<div class="background-index animated fadeIn"></div>
 
 <div class="container bg-transparent" style="position: relative">
   <div class="row">
@@ -26,7 +26,7 @@
           <!-- .filter -->
             <form style="padding: 16px;" action="/users" method="GET">
               <label class="label" for="filter">Filter by: &nbsp; &nbsp;</label>
-              <select class="form-style select-input" id="filter" name="filter" onchange="this.form.submit()">
+              <select class="form-style select-input " id="filter" name="filter" onchange="this.form.submit()">
                 <option class="form-style" value="">Best match</option>
                 <option class="form-style" value="gender" <%= "selected" if session[:filter] == "gender" %>>Filter by gender</option>
                 <option class="form-style" value="interest" <%= "selected" if session[:filter] == "interest" %>>Filter by interest</option>
