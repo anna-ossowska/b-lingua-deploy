@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-lg-12 col-md-12 col-xs-12 lead-box">
         <h1 class="banner-lead">Buddy Lingua</h1>
-        <p id="banner-typed-text">Meet a buddy, learn a language.</p>
+        <div class="typed-text-body"><span id="banner-typed-text">Meet a buddy, learn a language.</span></div>
           <% if @user %>
             <p><%= link_to "Get Started", user_path(@user), class: "button-purple-banner"%></p>
           <% else %>

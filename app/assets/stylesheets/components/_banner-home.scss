@@ -1,7 +1,10 @@
 .banner-home {
-  background-image:
-  linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)),
-  image-url('bg-main');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.1)
+    ),
+    image-url('bg-main');
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -27,32 +30,35 @@
   margin-bottom: 35px;
 }
 
+.typed-text-body {
+  height: 70px;
+  padding: 10px 2px;
+  margin-bottom: 6px;
+}
+
 #banner-typed-text {
   font-size: 25px;
   font-weight: 400;
   height: 70px;
   display: inline-block;
   max-width: 530px;
-  margin-top: 7px;
-  margin-bottom: 8px;
 }
-
 
 .hero {
   margin-right: 350px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
-
-
 
 /* Smartphones */
 @media only screen and (max-width: 500px) {
-
   .banner-home {
-    background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.73)),
-    image-url('bg-bubbles');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.52),
+        rgba(255, 255, 255, 0.73)
+      ),
+      image-url('bg-bubbles');
   }
 
   .banner-lead {
@@ -71,11 +77,14 @@
 }
 
 /* Tablets */
-@media(min-width: 501px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   .banner-home {
-    background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.73)),
-    image-url('bg-bubbles');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.52),
+        rgba(255, 255, 255, 0.73)
+      ),
+      image-url('bg-bubbles');
     height: 70vh;
   }
 
@@ -85,11 +94,14 @@
 }
 
 /* Normal */
-@media(min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .banner-home {
-    background-image:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)),
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.6)
+      ),
       image-url('bg-bubbles');
-      height: 70vh;
+    height: 70vh;
   }
 }
